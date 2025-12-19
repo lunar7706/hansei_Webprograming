@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>한세대학교 학점 계산 도우미</title>
+
+  <link rel="icon" href="./1_assets/img/favicon.svg" type="image/svg+xml" />
+  <meta property="og:image" content="./1_assets/img/og.svg" />
+
+  <link rel="stylesheet" href="./2_CSS/0_common.css" />
+  <script src="./3_JS/0_common.js" defer></script>
+</head>
+
+<body data-page="index">
+  <nav class="topnav">
+    <a href="./index.html" class="navbrand" aria-label="홈">
+      <img src="./1_assets/img/hansei_logo.svg" class="navlogo" alt="Hansei University logo">
+    </a>
+
+    <a href="./index.html" class="navbtn" data-target="index">홈</a>
+    <a href="./4_HTML/1_calc.html" class="navbtn" data-target="1_calc">학점 계산기</a>
+    <a href="./4_HTML/2_list.html" class="navbtn" data-target="2_list">이수 학점 리스트</a>
+    <a href="./4_HTML/3_converter.html" class="navbtn" data-target="3_converter">학기 성적 변환 계산기</a>
+    <a href="./4_HTML/4-1_rate.html" class="navbtn" data-target="4-1_rate">강의 평가</a>
+    <a href="./4_HTML/5_chatbot.html" class="navbtn" data-target="5_chatbot">한세대 챗봇</a>
+  </nav>
+
+  <main class="wrap">
+    <h1>한세대학교 학점 계산 도우미</h1>
+    <p>계산 · 변환 · 관리 · 목표/졸업 체크를 한 곳에서!</p>
+
+    <section style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:16px">
+      <a class="card" href="./4_HTML/1_calc.html">
+        <div class="card-head"><h2>학점 계산기</h2></div>
+        <p>학번과 학과를 입력하면, <b>졸업 요건 충족 여부</b>와 이수 학점을 확인합니다.</p>
+      </a>
+
+      <a class="card" href="./4_HTML/2_list.html">
+        <div class="card-head"><h2>이수 학점 리스트</h2></div>
+        <p>수강 과목과 학점을 <b>리스트 형태</b>로 관리합니다.</p>
+      </a>
+
+      <a class="card" href="./4_HTML/3_converter.html">
+        <div class="card-head"><h2>학기 성적 변환 계산기</h2></div>
+        <p>이번 학기 과목별 성적을 입력해 <b>평균 평점(GPA)</b>을 계산합니다.</p>
+      </a>
+
+      <a class="card" href="./4_HTML/4-1_rate.html">
+        <div class="card-head"><h2>강의 평가</h2></div>
+        <p>학부/전공/과목을 선택해 강의평(데모)을 확인합니다.</p>
+      </a>
+
+      <a class="card" href="./4_HTML/5_chatbot.html">
+        <div class="card-head"><h2>한세대 챗봇</h2></div>
+        <p>간단한 질문 응답(프로토타입)을 제공합니다.</p>
+      </a>
+    </section>
+  </main>
+</body>
+</html>

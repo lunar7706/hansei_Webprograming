@@ -1,0 +1,60 @@
+/* ② WEB/2_CSS/1_calc.css */
+:root { --accent: #3498db; }
+/* WEB/2_CSS/1_calc.css */
+
+:root {
+  --accent: #3498db;
+}
+
+/* 입력 폼 */
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 600;
+}
+
+input, select, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccd;
+  outline: none;
+  margin-top: 4px;
+  font-size: 1rem;
+  background: inherit;
+  color: inherit;
+}
+
+input:focus, select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+}
+
+/* 버튼 */
+button {
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #2b86c6;
+}
+
+.result {
+  margin-top: 18px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.result p.ok {
+  color: #0bb344;
+  font-weight: bold;
+}
+
+.result p.no {
+  color: #e23c39;
+  font-weight: bold;
+}
