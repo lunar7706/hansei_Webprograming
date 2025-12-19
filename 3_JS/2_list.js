@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-// ⑤ WEB/3_JS/2_list.js
-=======
-// WEB/3_JS/2_list.js
->>>>>>> 09fb237 (Upload)
+
 (function () {
   "use strict";
 
