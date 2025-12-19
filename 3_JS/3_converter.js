@@ -2,7 +2,7 @@
 (function () {
   "use strict";
 
-<<<<<<< HEAD
+
   function initConverterPage1() {
     const gradePoints = { "A+": 4.5, "A0": 4.0, "B+": 3.5, "B0": 3.0, "C+": 2.5, "C0": 2.0, "D+": 1.5, "D0": 1.0, "F": 0.0 };
     const addCourseBtn = document.getElementById("addCourseBtn");
@@ -13,7 +13,7 @@
     const loadBtn = document.getElementById("loadBtn");
     const sidInput = document.getElementById("studentId");
     if (!addCourseBtn || !tbody || !gpaResult || !clearAll || !saveBtn || !loadBtn || !sidInput) return;
-=======
+
   function initConverterPage() {
     console.log("[3_converter] initConverterPage called");
 
@@ -46,7 +46,6 @@
       console.warn("[3_converter] required elements missing");
       return;
     }
->>>>>>> 09fb237 (Upload)
 
     let convCourses = [];
 
