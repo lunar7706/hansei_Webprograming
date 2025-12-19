@@ -1,0 +1,75 @@
+/* 입력 폼 레이아웃 */
+/* WEB/2_CSS/2_list.css */
+
+/* 입력 폼 그리드 */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 16px;
+  margin-top: 12px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.form-row input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccd;
+  outline: none;
+  font-size: 1rem;
+}
+
+.form-row input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+}
+
+/* 버튼 영역 */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.actions button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.actions button:hover {
+  background: #2b86c6;
+}
+
+/* 테이블 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #e6eef3;
+  text-align: center;
+}
+
+th {
+  background: #f0f6fb;
+  font-weight: 700;
+}

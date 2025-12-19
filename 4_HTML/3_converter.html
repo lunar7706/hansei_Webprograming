@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>학기 성적 변환 계산기 - 한세대학교</title>
+
+  <!-- ✅ 1_assets 기준 favicon -->
+  <link rel="icon" href="../1_assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="../2_CSS/0_common.css">
+  <link rel="stylesheet" href="../2_CSS/3_converter.css">
+  <script src="../3_JS/0_common.js" defer></script>
+  <script src="../3_JS/3_converter.js" defer></script>
+</head>
+<<<<<<< HEAD
+<body>
+  <!-- 네비게이션 -->
+  <nav class="topnav">
+=======
+<body data-page="3_converter">
+  <nav class="topnav">
+    <a href="../index.html" class="navbrand" aria-label="홈">
+      <img
+        class="navlogo"
+        alt="한세대학교 로고"
+        src="../1_assets/img/hansei_logo.svg"
+      />
+    </a>
+
+>>>>>>> 09fb237 (Upload)
+    <a href="../index.html" class="navbtn" data-target="index">홈</a>
+    <a href="1_calc.html" class="navbtn" data-target="1_calc">학점 계산기</a>
+    <a href="2_list.html" class="navbtn" data-target="2_list">이수 학점 리스트</a>
+    <a href="3_converter.html" class="navbtn" data-target="3_converter">학기 성적 변환 계산기</a>
+    <a href="4-1_rate.html" class="navbtn" data-target="4-1_rate">강의 평가</a>
+    <a href="5_chatbot.html" class="navbtn" data-target="5_chatbot">한세대 챗봇</a>
+  </nav>
+
+  <main class="wrap">
+    <h1>학기 성적 변환 계산기</h1>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>기본 정보</h2>
+      </div>
+      <label>학번 (9자리)
+        <input id="studentId" type="text" placeholder="예: 202510031">
+      </label>
+    </section>
+
+    <section class="card" style="margin-top:12px">
+      <div class="card-head">
+        <h2>과목 입력</h2>
+      </div>
+
+      <label>과목명
+        <input id="courseName" type="text" placeholder="과목명을 입력하세요">
+      </label>
+      <label>학점
+        <input id="courseCredit" type="number" min="1" max="6" placeholder="학점">
+      </label>
+      <label>성적
+        <select id="courseGrade">
+          <option value="">-- 선택 --</option>
+          <option>A+</option><option>A0</option>
+          <option>B+</option><option>B0</option>
+          <option>C+</option><option>C0</option>
+          <option>D+</option><option>D0</option>
+          <option>F</option>
+        </select>
+      </label>
+      <label>학기
+        <input id="courseTerm" type="text" placeholder="예: 1-1">
+      </label>
+
+      <div class="actions" style="margin-top:10px">
+        <button id="addCourseBtn" type="button">과목 추가</button>
+        <button id="clearAll" type="button">초기화</button>
+        <button id="saveBtn" type="button">저장</button>
+        <button id="loadBtn" type="button">불러오기</button>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:12px">
+      <div class="card-head">
+        <h2>성적 리스트 & 요약</h2>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="num" id="convSubjectCount">-</div>
+          <div class="label">과목 수</div>
+        </div>
+        <div class="stat">
+          <div class="num" id="convTotalCredits">-</div>
+          <div class="label">총 학점</div>
+        </div>
+        <div class="stat">
+          <div class="num" id="convGpa">-</div>
+          <div class="label">평균 평점</div>
+        </div>
+      </div>
+
+      <table id="convTable">
+        <thead>
+          <tr>
+            <th>과목명</th>
+            <th>학점</th>
+            <th>성적</th>
+            <th>학기</th>
+            <th>삭제</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div id="gpaResult" class="result"></div>
+    </section>
+  </main>
+</body>
+</html>

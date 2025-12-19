@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>한세대 챗봇</title>
+
+  <link rel="icon" href="../1_assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="../2_CSS/0_common.css">
+  <link rel="stylesheet" href="../2_CSS/5_chatbot.css">
+  <script src="../3_JS/0_common.js" defer></script>
+  <script src="../3_JS/5_chatbot.js" defer></script>
+</head>
+<body data-page="5_chatbot">
+  <nav class="topnav">
+    <a href="../index.html" class="navbrand" aria-label="홈">
+      <img
+        class="navlogo"
+        alt="한세대학교 로고"
+        src="../1_assets/img/hansei_logo.svg"
+      />
+    </a>
+
+    <a href="../index.html" class="navbtn" data-target="index">홈</a>
+    <a href="1_calc.html" class="navbtn" data-target="1_calc">학점 계산기</a>
+    <a href="2_list.html" class="navbtn" data-target="2_list">이수 학점 리스트</a>
+    <a href="3_converter.html" class="navbtn" data-target="3_converter">학기 성적 변환 계산기</a>
+    <a href="4-1_rate.html" class="navbtn" data-target="4-1_rate">강의 평가</a>
+    <a href="5_chatbot.html" class="navbtn" data-target="5_chatbot">한세대 챗봇</a>
+  </nav>
+
+  <main class="wrap">
+    <h1>한세대 챗봇</h1>
+
+    <section class="stats" id="m5Stats">
+      <div class="stat">
+        <div class="num" id="m5AllGpa">-</div>
+        <div class="label">전체 GPA</div>
+      </div>
+      <div class="stat">
+        <div class="num" id="m5AllCredits">-</div>
+        <div class="label">누적 학점</div>
+      </div>
+      <div class="stat">
+        <div class="num" id="m5GradPct">-</div>
+        <div class="label">졸업 진행률</div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:12px">
+      <div class="card-head">
+        <h2>졸업 진행 현황</h2>
+        <span class="badge" id="m5MajorName">-</span>
+      </div>
+      <div id="m5Bars"></div>
+    </section>
+
+    <section class="card" style="margin-top:12px">
+      <div class="card-head">
+        <h2>한세대 챗봇</h2>
+        <span class="badge-warn">로컬 데이터 기반</span>
+      </div>
+      <div id="chatBox" style="height:280px;overflow:auto;border:1px solid #e6eef3;border-radius:8px;padding:12px;background:#fcfdff"></div>
+      <div style="display:flex;gap:8px;margin-top:10px">
+        <input id="chatInput" type="text"
+               placeholder="예: 졸업까지 얼마나 남았어? / 내 평균 몇 점이야?"
+               style="flex:1;padding:10px;border:1px solid #ccd;border-radius:8px">
+        <button id="chatSend" type="button">전송</button>
+      </div>
+      <p class="empty" style="margin-top:10px">
+        ※ 이 챗봇은 <b>localStorage</b>에 저장된 1_calc / 2_list / 3_converter 데이터를 읽어 간단한 답변을 제공합니다.
+        (데이터는 브라우저 안에만 저장되며, 서버로 전송되지 않습니다.)
+      </p>
+    </section>
+  </main>
+</body>
+</html>
