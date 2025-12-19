@@ -27,8 +27,25 @@
   </nav>
 
   <main class="wrap">
-    <h1>한세대학교 학점 계산 도우미</h1>
-    <p>계산 · 변환 · 관리 · 목표/졸업 체크를 한 곳에서!</p>
+    <section class="card" style="margin-bottom:18px">
+      <div class="card-head">
+        <h1>한세대학교 학점 계산 도우미</h1>
+        <button type="button"
+          onclick="Common.applyTheme(document.body.dataset.theme==='dark' ? 'light' : 'dark')">
+          테마 전환
+        </button>
+      </div>
+
+      <p>
+        한세대 학생을 위한 <strong>학점 계산 · 이수 학점 관리 · 성적 변환 · 졸업 준비</strong> 통합 도우미입니다.
+        <br/>모든 데이터는 <b>브라우저 로컬 저장소(localStorage)</b>에만 저장되며, 서버로 전송되지 않습니다.
+      </p>
+
+      <p class="empty">
+        샘플 학번 예시: <code>202510031</code><br/>
+        각 메뉴에서 학번과 과목 정보를 입력해보면 기능을 체험할 수 있습니다.
+      </p>
+    </section>
 
     <section style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:16px">
       <a class="card" href="./4_HTML/1_calc.html">

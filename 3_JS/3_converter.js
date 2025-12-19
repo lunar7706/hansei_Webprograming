@@ -2,18 +2,6 @@
 (function () {
   "use strict";
 
-
-  function initConverterPage1() {
-    const gradePoints = { "A+": 4.5, "A0": 4.0, "B+": 3.5, "B0": 3.0, "C+": 2.5, "C0": 2.0, "D+": 1.5, "D0": 1.0, "F": 0.0 };
-    const addCourseBtn = document.getElementById("addCourseBtn");
-    const tbody = document.querySelector("#convTable tbody");
-    const gpaResult = document.getElementById("gpaResult");
-    const clearAll = document.getElementById("clearAll");
-    const saveBtn = document.getElementById("saveBtn");
-    const loadBtn = document.getElementById("loadBtn");
-    const sidInput = document.getElementById("studentId");
-    if (!addCourseBtn || !tbody || !gpaResult || !clearAll || !saveBtn || !loadBtn || !sidInput) return;
-
   function initConverterPage() {
     console.log("[3_converter] initConverterPage called");
 
